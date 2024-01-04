@@ -118,3 +118,75 @@ Your code should not be executed when imported
 # Filename: 5-variable_load.py
 
 
+
+
+
+6. Build my own calculator!
+#advanced
+
+Write a program that imports all functions from the file calculator_1.py and handles basic operations.
+
+Usage: ./100-my_calculator.py a operator b
+If the number of arguments is not 3, your program has to:
+print Usage: ./100-my_calculator.py <a> <operator> <b> followed with a new line
+exit with the value 1
+operator can be:
++ for addition
+- for subtraction
+* for multiplication
+/ for division
+If the operator is not one of the above:
+print Unknown operator. Available operators: +, -, * and / followed with a new line
+exit with the value 1
+You can cast a and b into integers by using int() (you can assume that all arguments will be castable into integers)
+The result should be printed like this: <a> <operator> <b> = <result>, followed by a new line
+You are not allowed to use * for importing or __import__
+Your code should not be executed when imported
+
+# Filename: 100-my_calculator.py
+
+
+
+
+
+7. Easy print
+#advanced
+
+Write a program that prints #pythoniscool, followed by a new line, in the standard output.
+
+Your program should be maximum 2 lines long
+You are not allowed to use print or eval or open or import sys in your file 101-easy_print.py
+
+# Filename: 101-easy_print.py
+
+
+
+
+
+
+8. ByteCode -> Python #3
+#advanced
+
+Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
+
+# Filename: 102-magic_calculation.py
+
+
+
+
+
+
+9. Fast alphabet
+#advanced
+
+Write a program that prints the alphabet in uppercase, followed by a new line.
+
+Your program should be maximum 3 lines long
+You are not allowed to use:
+any loops
+any conditional statements
+str.join()
+any string literal
+any system calls
+
+# Filename: 103-fast_alphabet.py
