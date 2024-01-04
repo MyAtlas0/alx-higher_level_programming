@@ -13,4 +13,3 @@ if __name__ == "__main__":
         total += int(argv[i])
 
     print("{}".format(total))
-
