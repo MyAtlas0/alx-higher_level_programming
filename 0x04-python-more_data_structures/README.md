@@ -2,7 +2,7 @@
 
 
 
-Last Updated: 10/01/2024;
+Last Updated: 11/01/2024;
 Contributor(s): MyAtlas0;
 
 
@@ -111,3 +111,69 @@ Dictionary values can have any type
 You are not allowed to import any module
 
 # Filename: 6-print_sorted_dictionary.py
+
+
+
+
+
+7. Update dictionary
+#mandatory
+
+Write a function that replaces or adds key/value in a dictionary.
+
+Prototype: def update_dictionary(a_dictionary, key, value):
+key argument will be always a string
+value argument will be any type
+If a key exists in the dictionary, the value will be replaced
+If a key doesn’t exist in the dictionary, it will be created
+You are not allowed to import any module
+
+# Filename: 7-update_dictionary.py
+
+
+
+
+
+8. Simple delete by key
+#mandatory
+
+Write a function that deletes a key in a dictionary.
+
+Prototype: def simple_delete(a_dictionary, key=""):
+key argument will be always a string
+If a key doesn’t exist, the dictionary won’t change
+You are not allowed to import any module
+
+# Filename: 8-simple_delete.py
+
+
+
+
+
+9. Multiply by 2
+#mandatory
+
+Write a function that returns a new dictionary with all values multiplied by 2
+
+Prototype: def multiply_by_2(a_dictionary):
+You can assume that all values are only integers
+Returns a new dictionary
+You are not allowed to import any module
+
+# Filename: 9-multiply_by_2.py
+
+
+
+
+10. Best score
+#mandatory
+
+Write a function that returns a key with the biggest integer value.
+
+Prototype: def best_score(a_dictionary):
+You can assume that all values are only integers
+If no score found, return None
+You can assume all students have a different score
+You are not allowed to import any module
+
+# Filename: 10-best_score.py
