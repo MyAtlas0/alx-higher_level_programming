@@ -2,7 +2,7 @@
 
 
 
-Last Updated: 03/01/2024;
+Last Updated: 11/01/2024;
 Contributor(s): MyAtlas0;
 
 
@@ -206,3 +206,69 @@ Write a Python script that prints “The Zen of Python”, by TimPeters, followe
 Your script should be maximum 98 characters long (please check with wc -m 9-easter_egg.py)
 
 # Filename: 9-easter_egg.py
+
+
+
+
+10. Linked list cycle
+#mandatory
+
+Technical interview preparation:
+
+You are not allowed to google anything
+Whiteboard first
+This task and all future technical interview prep tasks will include checks for the efficiency of your solution,
+i.e. is your solution’s runtime fast enough, does your solution require extra memory usage / mallocs, etc.
+Write a function in C that checks if a singly linked list has a cycle in it.
+
+Prototype: int check_cycle(listint_t *list);
+Return: 0 if there is no cycle, 1 if there is a cycle
+Requirements:
+
+Only these functions are allowed: write, printf, putchar, puts, malloc, free
+
+# Filenames: 10-check_cycle.c, lists.h
+
+
+
+
+
+11. Hello, write
+#advanced
+
+Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
+
+Use the function write from the sys module
+You are not allowed to use print
+Your script should print to stderr
+Your script should exit with the status code 1
+
+# Filename: 100-write.py
+
+
+
+
+
+12. Compile
+#advanced
+
+Write a script that compiles a Python script file.
+
+The Python file name will be stored in the environment variable $PYFILE
+
+The output filename has to be $PYFILEc (ex: export PYFILE=my_main.py => output filename: my_main.pyc)
+
+# Filename: 101-compile
+
+
+
+
+
+13. ByteCode -> Python #1
+#advanced
+
+Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
+
+Tip: Python bytecode
+
+# Filename: 102-magic_calculation.py
