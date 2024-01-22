@@ -1,7 +1,7 @@
 			# alx-higher_level_programming README File
 
 
-Last Updated: 12/01/2024;
+Last Updated: 22/01/2024;
 Contributor(s): MyAtlas0;
 
 
@@ -16,3 +16,5 @@ PYTHON Directories:
 0x03-python-data_structures;
 
 0x04-python-more_data_structures;
+
+0x05-python-exceptions;
