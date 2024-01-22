@@ -2,8 +2,8 @@
 
 import sys
 
-def safe_function(fct, *args):
 
+def safe_function(fct, *args):
     """Executes a function safely.
 
     Args:
