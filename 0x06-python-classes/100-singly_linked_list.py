@@ -2,6 +2,7 @@
 
 """Define classes for a singly-linked list."""
 
+
 class Node:
     """Represent a node in a singly-linked list."""
 
@@ -86,4 +87,4 @@ class SinglyLinkedList:
         while current:
             values.append(str(current.data))
             current = current.next_node
-        return '\n'.join(values)
+        return ('\n'.join(values))
