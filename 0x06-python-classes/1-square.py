@@ -2,6 +2,7 @@
 
 """ Define a Class Square """
 
+
 class Square:
     """ Repesents a Square """
 
