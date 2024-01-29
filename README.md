@@ -1,7 +1,7 @@
 			# alx-higher_level_programming README File
 
 
-Last Updated: 22/01/2024;
+Last Updated: 29/01/2024;
 Contributor(s): MyAtlas0;
 
 
@@ -18,3 +18,7 @@ PYTHON Directories:
 0x04-python-more_data_structures;
 
 0x05-python-exceptions;
+
+0x06-python-classes;
+
+0x07-python-test_driven_development;
