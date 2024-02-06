@@ -8,10 +8,10 @@ class MyList(list):
     def print_sorted(self):
         """Print the list in sorted ascending order.
 
-        If the list contains mixed data types, it will print a message indicating
-        that sorting is not possible due to mixed data types.
+        Raises:
+            TypeError: If the list contains mixed data types.
         """
         try:
             print(sorted(self))
         except TypeError:
-            print("Unable to sort the list due to mixed data types")
+            raise TypeError("Unable to sort the list due to mixed data types")
