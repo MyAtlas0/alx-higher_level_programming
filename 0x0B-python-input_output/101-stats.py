@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Reads from standard input and computes metrics.
+"""
+Reads from standard input and computes metrics.
 
 After every ten lines or the input of a keyboard interruption (CTRL + C),
 prints the following statistics:
@@ -10,19 +11,16 @@ prints the following statistics:
 
 import sys
 
-def print_stats(size, status_codes, count):
+def print_stats(size, status_codes):
     """Print accumulated metrics.
 
     Args:
         size (int): The accumulated read file size.
         status_codes (dict): The accumulated count of status codes.
-        count (int): The number of lines processed.
     """
-    print("Statistics after processing {} lines:".format(count))
-    print("Total file size: {} bytes".format(size))
-    print("Status code counts:")
-    for code, count in status_codes.items():
-        print("    {}: {}".format(code, count))
+    print("File size: {} bytes".format(size))
+    for code in sorted(status_codes):
+        print("{}: {}".format(code, status_codes[code]))
 
 if __name__ == "__main__":
     size = 0
@@ -35,28 +33,32 @@ if __name__ == "__main__":
             count += 1
             line_parts = line.split()
 
+            # Extract file size
             try:
-                size += int(line_parts[-1])
+                file_size = int(line_parts[-1])
+                size += file_size
             except (IndexError, ValueError):
                 print("Error: Invalid format for line {}, skipping.".format(count))
                 continue
 
+            # Extract status code
             try:
-                code = line_parts[-2]
-                if code in valid_codes:
-                    status_codes[code] = status_codes.get(code, 0) + 1
+                status_code = line_parts[-2]
+                if status_code in valid_codes:
+                    status_codes[status_code] = status_codes.get(status_code, 0) + 1
             except IndexError:
                 print("Error: No status code found for line {}, skipping.".format(count))
                 continue
 
+            # Print statistics every 10 lines
             if count % 10 == 0:
-                print_stats(size, status_codes, count)
-                size = 0
-                status_codes = {}
+                print_stats(size, status_codes)
 
+        # Print final statistics if lines are not multiples of 10
         if count % 10 != 0:
-            print_stats(size, status_codes, count)
+            print_stats(size, status_codes)
 
     except KeyboardInterrupt:
-        print_stats(size, status_codes, count)
+        # Print final statistics on keyboard interruption
+        print_stats(size, status_codes)
         raise
